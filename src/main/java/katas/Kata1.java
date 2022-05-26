@@ -26,7 +26,9 @@ public class Kata1 {
         //Movie o =(x) -> x.g
 
         lista = movies.stream()
-                .map((x) ->ImmutableMap.of(x.getId(), x.getInterestingMoments(), x.getTitle(), x.getBoxarts())).collect(Collectors.toList());
+                .map((x) ->ImmutableMap.of(x.getId(), x.getInterestingMoments(), x.getTitle(), x.getBoxarts()))
+                .collect(Collectors.toList());
+
         return lista;
 
 
